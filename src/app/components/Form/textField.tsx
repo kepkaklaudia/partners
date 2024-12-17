@@ -26,7 +26,7 @@ export const TextField = ({
         <label htmlFor={fieldName}>{label}</label>
         <input
           className={cn(
-            "border border-blue focus-visible:outline-none focus-visible:ring-blue focus-visible:ring-offset-1 focus-visible:ring-1 transition-colors px-3 py-2 placeholder:text-sm lg:placeholder:text-base"
+            "border border-blue focus-visible:outline-none focus-visible:ring-blue focus-visible:ring-offset-1 focus-visible:ring-1 transition-colors px-3 py-2 placeholder:text-sm lg:placeholder:text-base font-light"
           )}
           {...register(fieldName, {
             required: "To pole jest wymagane",

@@ -19,7 +19,7 @@ export const TextareaField = ({
     <div className=" flex flex-col w-full relative justify-center gap-2">
       <p>Your message</p>
       <textarea
-        className="w-full h-[105px] resize-none text-left p-3 border focus-visible:ring-offset-1 border-blue focus-visible:outline-none  focus-visible:ring-blue focus-visible:ring-1 transition-colors  placeholder:text-sm lg:placeholder:text-base lg:h-[150px]"
+        className="w-full h-[105px] font-light resize-none text-left p-3 border focus-visible:ring-offset-1 border-blue focus-visible:outline-none focus-visible:ring-blue focus-visible:ring-1 transition-colors  placeholder:text-sm lg:placeholder:text-base lg:h-[150px]"
         placeholder={placeholder}
         defaultValue={defaultValue}
         {...register(fieldName, {
@@ -27,7 +27,7 @@ export const TextareaField = ({
         })}
       />
       {errors[fieldName] && (
-        <p className="absolute -bottom-5 text-xs text-red-600">
+        <p className="absolute -bottom-5 text-xs text-red-600 font-light">
           {`${errors[fieldName]?.message}` || ""}
         </p>
       )}

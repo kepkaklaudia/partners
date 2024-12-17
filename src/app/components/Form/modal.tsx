@@ -39,12 +39,12 @@ export const StyledModal = ({
       <Dialog open={show} onOpenChange={handleClose}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle className="text-xl text-left pb-4 border-solid border-alto border-b font-bold lg:text-2xl ">
+            <DialogTitle className="text-xl text-left pb-4 border-solid border-alto border-b  lg:text-2xl ">
               Dziękujemy za skontaktowanie się z&nbsp;nami
-              <p className="font-normal text-base">Formularz został wysłany</p>
+              <p className="font-light text-base">Formularz został wysłany</p>
             </DialogTitle>
           </DialogHeader>
-          <div className="flex flex-col gap-2 text-sm md:text-base">
+          <div className="flex flex-col gap-2 text-sm md:text-base font-light">
             {" "}
             {modalItems.map(
               (item, index) =>
@@ -87,7 +87,7 @@ export const StyledModal = ({
           </div>
           <DialogFooter className="flex flex-col max-w-[90%] mx-auto mt-6">
             <button
-              className="text-white bg-blue p-3 text-xs focus-visible:outline-none focus-visible:ring-blue focus-visible:ring-1 focus-visible:ring-offset-1 transition-colors"
+              className="text-white bg-blue p-3 text-xs focus-visible:outline-none focus-visible:ring-blue focus-visible:ring-1 focus-visible:ring-offset-1 transition-colors font-light"
               onClick={handleClose}
             >
               Zamknij

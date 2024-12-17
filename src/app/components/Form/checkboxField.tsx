@@ -28,11 +28,11 @@ export const CheckboxField = ({
           </Checkbox>
         )}
       />
-      <label htmlFor={fieldName} className="text-xs lg:text-sm">
+      <label htmlFor={fieldName} className="text-xs lg:text-sm font-light">
         {label}
       </label>
       {errors[fieldName] && (
-        <p className="text-xs text-red-600 absolute -bottom-5">
+        <p className="text-xs text-red-600 absolute -bottom-5 font-light">
           {`${errors[fieldName]?.message}` || ""}
         </p>
       )}

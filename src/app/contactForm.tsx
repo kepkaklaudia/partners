@@ -73,9 +73,9 @@ export const ContactForm = () => {
   };
 
   return (
-    <div id="contact" className="my-8 max-w-[600px] w-[90%] mx-auto">
+    <div id="contact" className="mb-20 max-w-[600px] w-[90%] mx-auto">
       <form
-        className="gap-7 flex flex-col my-16"
+        className="gap-7 flex flex-col"
         noValidate
         onSubmit={handleSubmit(onSubmit)}
       >
@@ -109,7 +109,7 @@ export const ContactForm = () => {
           label="Wyrażam zgodę na przetwarzanie danych osobowych w&nbsp;związku ze złożeniem zapytania za pośrednictwem formularza&nbsp;kontaktowego."
         />
         <button
-          className="bg-black text-white p-3 focus-visible:outline-none focus-visible:ring-blue focus-visible:ring-1 focus-visible:ring-offset-1 transition-colors mx-auto rounded-none ml-auto mr-0"
+          className="bg-black text-white p-3 focus-visible:outline-none focus-visible:ring-blue focus-visible:ring-1 focus-visible:ring-offset-1 transition-colors mx-auto rounded-none ml-auto mr-0 font-light"
           type="submit"
         >
           Wyślij formularz
